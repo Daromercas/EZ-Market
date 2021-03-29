@@ -12,8 +12,9 @@ import { SignInComponent } from './components/sign-in/sign-in.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 import { AuthGuard } from './auth.guard';
-import { NgAuthService } from './auth.service';
+import { AuthenticationService } from './auth.service';
 import { SettingsComponent } from './pages/settings/settings.component';
+import { Investing101Component } from './pages/investing101/investing101.component';
 
 
 
@@ -21,28 +22,30 @@ import { SettingsComponent } from './pages/settings/settings.component';
 
 
 const routes: Routes = [
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
   {
     path: 'home',
     component: HomeComponent
   },
   {
     path: 'accounts',
-    component: AccountsComponent,canActivate: [AuthGuard]
+    component: AccountsComponent, canActivate: [AuthGuard]
   },
   {
    path: 'investort',
-   component: InvestortComponent 
+   component: InvestortComponent, canActivate: [AuthGuard]
   },
   {
     path: 'settings',
-    component: SettingsComponent,canActivate: [AuthGuard]
+    component: SettingsComponent, canActivate: [AuthGuard]
    },
+   { path: 'investing101', component: Investing101Component , canActivate: [AuthGuard] },
+
   { path: 'sign-in', component: SignInComponent },
   { path: 'sign-up', component: SignUpComponent },
   { path: 'forgot-password', component: ForgotPasswordComponent },
   { path: 'email-verification', component: VerifyEmailComponent },
-  { path: 'dashboard', component: DashboardComponent },
-  { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
+  //{ path: 'dashboard', component: DashboardComponent },
 
 
 
@@ -52,6 +55,6 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forRoot(routes),CommonModule],
   exports: [RouterModule],
-  providers: [NgAuthService]
+  providers: [AuthenticationService,AuthGuard]
 })
 export class AppRoutingModule { }

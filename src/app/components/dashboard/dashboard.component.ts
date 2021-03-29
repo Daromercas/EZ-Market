@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgAuthService } from 'src/app/auth.service';
+import { AuthenticationService } from 'src/app/auth.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,7 +9,7 @@ import { NgAuthService } from 'src/app/auth.service';
 export class DashboardComponent implements OnInit {
 
   constructor(
-    public ngAuthService: NgAuthService
+    public ngAuthService: AuthenticationService
   ) { }
 
   ngOnInit(): void {

@@ -23,8 +23,8 @@
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #4CAF50;
-  color: white;
+  background-color: white;
+  color: black;
 }
 .imgbox {
   display: grid;
@@ -40,6 +40,8 @@
   width: 100px;
   height: 100px;
   margin: auto;
+  max-width: 120px;
+  max-height: 120px;
 }
 
 .table{
@@ -49,14 +51,10 @@
  font-weight: bold;
 }
 
-.icon{
-  max-width: 120px;
-  max-height: 120px;
-}
 .EZ{
   text-decoration: dashed;
   text-decoration-color: blue;
-  color:yellow;
+  color:black;
   font-size: large;
 }
 
@@ -71,3 +69,22 @@
   display: table-cell;
 }
 
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.content {
+  padding: 0px;
+  min-height: 100%;
+  margin: 0 auto -50px;
+}
+.footer,
+.push {
+  height: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+Navigation{
+  background-color: #F8F9F9; color: black; font-weight: bold;
+}

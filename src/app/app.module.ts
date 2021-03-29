@@ -17,6 +17,10 @@ import { InvestortComponent } from './pages/investort/investort.component';
 import { LearnComponent } from './pages/learn/learn.component';
 import { environment } from 'src/environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AuthGuard } from './auth.guard';
+import { AuthenticationService } from './auth.service';
+import { Investing101Component } from './pages/investing101/investing101.component';
+
 
 
 
@@ -30,6 +34,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
     HomeComponent,
     InvestortComponent,
     LearnComponent,
+    Investing101Component,
   ],
   imports: [
     BrowserModule,
@@ -43,7 +48,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 
   ],
   
-  providers: [],
+  providers: [AuthGuard,AuthenticationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

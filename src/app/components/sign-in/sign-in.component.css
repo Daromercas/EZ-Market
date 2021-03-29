@@ -4,14 +4,14 @@
         margin: 0;
         padding: 0;
         height: 100vh;
-        background: #60a3bc !important;
+        background: #355070 !important;
     }
     .user_card {
         height: 400px;
         width: 350px;
         margin-top: auto;
         margin-bottom: auto;
-        background: #f39c12;
+        background: #F8F9F9;
         position: relative;
         display: flex;
         justify-content: center;
@@ -29,7 +29,7 @@
         width: 170px;
         top: -75px;
         border-radius: 50%;
-        background: #60a3bc;
+        background: #355070;
         padding: 10px;
         text-align: center;
     }
