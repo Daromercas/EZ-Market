@@ -10,3 +10,17 @@
         <a href="https://www.investopedia.com/" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action">Investopedia</a>
       </div>
   
+
+
+      <script>
+
+var stockticker = "TSLA";
+
+StockSocket.addTicker(stockticker, stockPriceChanged);
+
+function stockPriceChanged(data) {
+  console.log(data);
+}
+
+        
+        </script>

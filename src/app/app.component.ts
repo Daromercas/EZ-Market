@@ -40,6 +40,10 @@ export class AppComponent {
     this.ngAuthService.SignOut();
     }
 
+
+
+    
+
   ngOnInit(): void {
   }
 }

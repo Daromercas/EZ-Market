@@ -1,0 +1,16 @@
+.learn{
+    font-size: 63px; text-align: center;  color: black;
+}
+.card-img-top{
+    width: 250px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card{
+    background-color: #427AA1;
+    color: white;
+    font-size: large;
+  
+}

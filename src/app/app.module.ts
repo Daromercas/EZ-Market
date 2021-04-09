@@ -22,6 +22,9 @@ import { AuthenticationService } from './auth.service';
 import { Investing101Component } from './pages/investing101/investing101.component';
 
 
+import { HttpClientModule } from '@angular/common/http';
+import { StocksComponent } from './pages/stocks/stocks.component';
+
 
 
 
@@ -35,6 +38,7 @@ import { Investing101Component } from './pages/investing101/investing101.compone
     InvestortComponent,
     LearnComponent,
     Investing101Component,
+    StocksComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,7 +48,9 @@ import { Investing101Component } from './pages/investing101/investing101.compone
     AngularFireAuthModule,
     RouterModule,
     AngularFirestoreModule,
-  
+    HttpClientModule,
+   
+    
 
   ],
   

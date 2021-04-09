@@ -20,7 +20,7 @@
         <header>
          
           
-          <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #F8F9F9; color: black; font-weight: bold;">
+          <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #71B48D; color: black; font-weight: bold;">
             <a class="EZ" routerLink= "home">EZ Market </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -29,19 +29,25 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" routerLink= "accounts" style="color: black;">Accounts</a>
+                  <a class="nav-link" routerLink= "stocks" style="color: black;">Portfolio</a>
                 </li>
+                <!-- 
                 <li class="nav-item active">
-                  <a class="nav-link" href="investort" style="color: black;">Settings</a>
+                  <a class="nav-link" href="home" style="color: black;">Settings</a>
                 </li>
+                -->
               </ul>
             </div>
+            
             <button (click)="signOut()" class="btn btn-danger mr-1" *ngIf="ngAuthService.userData | async">Logout</button>
           </nav>
               </header>
               
         <div class="push"></div>
       </div>
+
+
+      
       
       <footer class="footer">
         © 2021 Copyright: David Mercado 
