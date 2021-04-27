@@ -49,7 +49,7 @@ async function getapi() {
     const response = await fetch("https://alpha-vantage.p.rapidapi.com/query?function=GLOBAL_QUOTE&symbol=AMD", {
       "method": "GET",
       "headers": {
-        "x-rapidapi-key": "4be0429e17msh2f2eee4816d2a32p18a9f7jsnb52e46c321f2",
+        "x-rapidapi-key": "**********",
         "x-rapidapi-host": "alpha-vantage.p.rapidapi.com"
       }
     })
