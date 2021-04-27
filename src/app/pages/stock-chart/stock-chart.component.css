@@ -1,0 +1,13 @@
+.chart{
+    margin: auto;
+    width: 50%;
+    
+    padding: 10px;    
+}
+.mid{
+    margin: 0;
+  position: absolute;
+  
+  -ms-transform: translateY(-120%);
+  transform: translateY(-120%);
+}

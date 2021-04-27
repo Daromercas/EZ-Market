@@ -24,10 +24,9 @@ import { Investing101Component } from './pages/investing101/investing101.compone
 
 import { HttpClientModule } from '@angular/common/http';
 import { StocksComponent } from './pages/stocks/stocks.component';
+import { StockChartComponent } from './pages/stock-chart/stock-chart.component';
 
-
-
-
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -39,17 +38,23 @@ import { StocksComponent } from './pages/stocks/stocks.component';
     LearnComponent,
     Investing101Component,
     StocksComponent,
+    StockChartComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
+    
     AngularFireAuthModule,
     RouterModule,
     AngularFirestoreModule,
     HttpClientModule,
-   
+    ChartsModule,
+    
+    
+    
     
 
   ],

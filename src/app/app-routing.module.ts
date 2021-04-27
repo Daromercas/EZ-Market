@@ -16,7 +16,9 @@ import { AuthenticationService } from './auth.service';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { Investing101Component } from './pages/investing101/investing101.component';
 import { StocksComponent } from './pages/stocks/stocks.component';
-import { ChartComponent } from './pages/chart/chart.component';
+
+import { StockChartComponent } from './pages/stock-chart/stock-chart.component';
+
 
 
 
@@ -43,8 +45,8 @@ const routes: Routes = [
    },
    { path: 'investing101', component: Investing101Component , canActivate: [AuthGuard] },
    { path: 'stocks', component: StocksComponent , canActivate: [AuthGuard] },
-   { path: 'chart', component: ChartComponent },
-
+  
+  { path: 'chart', component: StockChartComponent },
   { path: 'sign-in', component: SignInComponent },
   { path: 'sign-up', component: SignUpComponent },
   { path: 'forgot-password', component: ForgotPasswordComponent },

@@ -1,0 +1,49 @@
+<br/><br/><br/><br/>
+
+<head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+
+<div class="chart" >
+    <h1 style="text-align: center;"class="animate__backInDown">Stocks growth by years</h1>
+  <canvas baseChart 
+    [datasets]="barChartData"
+    [labels]="barChartLabels"
+    [options]="barChartOptions"
+    [plugins]="barChartPlugins"
+    [legend]="barChartLegend"
+    [chartType]="barChartType">
+  </canvas>
+  
+  <span style="color: white;">You have found an easter egg, remember to smile and drink water  &nbsp; &nbsp; &nbsp; &nbsp;</span><button  class="center" mat-button mat-raised-button color="primary" (click)="randomize()"> Risk?</button>
+  <span style="color: white;"> &nbsp;</span><button  class="center" mat-button mat-raised-button color="primary" (click)="set(10)"> Set to 10</button>
+
+
+  <h1 style="text-align: center;">Portfolio</h1>
+  <canvas baseChart
+  [datasets]="pieChartData"
+  [labels]="pieChartLabels"
+  [options]="pieChartOptions"
+  [plugins]="pieChartPlugins"
+  [legend]="pieChartLegend"
+  [chartType]="pieChartType">
+</canvas>
+
+<div class="mid">
+<input #newTicker
+      (keyup.enter)="addTicker(newTicker.value)"
+      (blur)="addTicker(newTicker.value); newTicker.value='' ">
+
+      
+
+      
+
+    <button (click)="addTicker(newTicker.value)">Add</button>
+
+    <ul><li *ngFor="let ticker of tickers">{{ticker}}</li></ul>
+</div>
+</div>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
