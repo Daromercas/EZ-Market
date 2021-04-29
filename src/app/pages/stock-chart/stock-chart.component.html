@@ -19,7 +19,7 @@
   </canvas>
   
   <span style="color: white;">You have found an easter egg, remember to smile and drink water  &nbsp; &nbsp; &nbsp; &nbsp;</span><button  class="center" mat-button mat-raised-button color="primary" (click)="randomize()"> Risk?</button>
-  <span style="color: white;"> &nbsp;</span><button  class="center" mat-button mat-raised-button color="primary" (click)="set(10)"> Set to 10</button>
+<button  class="center" mat-button mat-raised-button color="primary" (click)="set(10)"> Set to 10K</button>
 
 
   <h1 style="text-align: center;">Portfolio</h1>
@@ -46,4 +46,8 @@
     <ul><li *ngFor="let ticker of tickers">{{ticker}}</li></ul>
 </div>
 </div>
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/>
+<div class="center">
+  <h1 style="text-align: center;">Candlestick Chart</h1>
+<iframe height="610" width="1024"  src="https://ssltvc.forexprostools.com/?pair_ID=13994&height=600&width=1024&interval=300&plotStyle=candles&domain_ID=1&lang_ID=1&timezone_ID=7"></iframe>
+</div>

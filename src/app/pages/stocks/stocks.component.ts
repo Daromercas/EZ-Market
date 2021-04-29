@@ -46,11 +46,12 @@ fetch("https://alpha-vantage.p.rapidapi.com/query?function=GLOBAL_QUOTE&symbol=T
 async function getapi() {
     
     // Storing response
-    const response = await fetch("https://alpha-vantage.p.rapidapi.com/query?function=GLOBAL_QUOTE&symbol=AMD", {
+    
+    const response = await fetch("https://twelve-data1.p.rapidapi.com/price?symbol=AMD%2CTSLA%2CNIO%2CSQ%2CBLOK%2CMRNA&format=json&outputsize=30", {
       "method": "GET",
       "headers": {
-        "x-rapidapi-key": "**********",
-        "x-rapidapi-host": "alpha-vantage.p.rapidapi.com"
+        "x-rapidapi-key": "4be0429e17msh2f2eee4816d2a32p18a9f7jsnb52e46c321f2",
+        "x-rapidapi-host": "twelve-data1.p.rapidapi.com"
       }
     })
     
@@ -64,10 +65,10 @@ async function getapi() {
         hideloader();
     }
     
-    show(data);
+   // show(data);
 }
 // Calling that async function
- getapi();
+ //getapi();
   
 // Function to hide the loader
 function hideloader() {
@@ -103,13 +104,15 @@ function show(data) {
 </tr>`;
     }
     */
-    
+    let i =0;
+    const stocks = ["AMC","TSLA","NIO","SQ","BLOK","MRNA"];
     for (let r of Object.values(data)) {
     
       tab += `<tr> 
   
-  <td>${JSON.stringify(r).split("/t")}</td>
-  
+  <td> ${stocks[i]}   ${JSON.stringify(r).split("/t")}</td>
+ 
+  ${i++}
 </tr>`;
   }
     // Setting innerHTML as tab variable
@@ -151,6 +154,11 @@ function show(data) {
      
   }
 */
+
+
+
+
+
 
     
   }

@@ -8,6 +8,12 @@
     margin: 0;
   position: absolute;
   
-  -ms-transform: translateY(-120%);
-  transform: translateY(-120%);
+  -ms-transform: translateY(-150%);
+  transform: translateY(-150%);
+}
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }

@@ -46,7 +46,7 @@ const routes: Routes = [
    { path: 'investing101', component: Investing101Component , canActivate: [AuthGuard] },
    { path: 'stocks', component: StocksComponent , canActivate: [AuthGuard] },
   
-  { path: 'chart', component: StockChartComponent },
+  { path: 'chart', component: StockChartComponent, canActivate: [AuthGuard] },
   { path: 'sign-in', component: SignInComponent },
   { path: 'sign-up', component: SignUpComponent },
   { path: 'forgot-password', component: ForgotPasswordComponent },
