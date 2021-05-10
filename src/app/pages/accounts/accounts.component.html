@@ -1,0 +1,26 @@
+<p>accounts works!</p>
+
+    <h1>HELLOOOOOO</h1>
+
+    <div class="list-group">
+     
+        <a href="https://investors.com" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action">Investors</a>
+        <a href="https://thecollegeinvestor.com/" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action">The College Investor</a>
+        <a href="https://www.morningstar.com/" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action">Morningstar</a>
+        <a href="https://www.investopedia.com/" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action">Investopedia</a>
+      </div>
+  
+
+
+      <script>
+
+var stockticker = "TSLA";
+
+StockSocket.addTicker(stockticker, stockPriceChanged);
+
+function stockPriceChanged(data) {
+  console.log(data);
+}
+
+        
+        </script>
